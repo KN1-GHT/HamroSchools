@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing Page</title>
+  <!-- Link to Tailwind CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="LandingPage.css">
+  <script src="https://kit.fontawesome.com/4b1d5cc8eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-black">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <a class="flex items-center">
+        <img src="./HamroSchools (1).svg" class="h-6 mr-3 sm:h-9" alt="HamroSchools Logo" style="margin-left: 100px;" />
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">HamroSchools</span>
+    </a>
+    <div class="items-center justify-between hidden md:flex md:w-auto md:order-1" id="mobile-menu-2" style="margin-right:100px;">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 -lg bg-gray-400 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-white bg-gray-700  md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" style="margin-left: 10px;">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 style="margin-left: 10px;">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 style="margin-left: 10px;">Pricing</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 style="margin-left: 10px;">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="text-5xl font-bold mb-4">Welcome to HamroSchools</h1>
+      <p class="text-lg mb-8">Hamroschools is a one-stop website for discovering the best schools and colleges in Nepal, providing valuable information for students, parents, and educators.</p>
+      <a href="Homepage.html" class="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-700">Get Started</a>
+      <style>
+        .hero {
+          background-image: url('/Images/LandingBack2.jpg');
+          background-size: cover;
+          background-position: center center;
+          height: 75vh;
+          display: flex;
+          align-items: center;
+        }
+        
+        .hero-text {
+          max-width: 800px;
+          margin: 0 auto;
+          text-align: center;
+          color: #000000;
+        }
+      </style>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="p-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">Our Features</h2>
+      <div class="flex flex-wrap mx-4">
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-white rounded-lg p-6 ">
+            <h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-star"></i>   Reviews And Ratings</h3>
+            <p class="text-gray-700">Read and write reviews about schools in your area. 
+              See overall ratings and individual ratings for different aspects of the school (e.g. academics, facilities, teachers)</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-white rounded-lg p-6">
+            
+            <h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-magnifying-glass"></i>   Discover Schools</h3>
+            <p class="text-gray-700">Discover schools and colleges based on geography, kind, and ratings. Users can filter schools based on numerous parameters, such as grade levels, extracurricular activities, and so on.</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 px-4 mb-8">
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-user-secret"></i>   Anonymous Reviews</h3>
+            <p class="text-gray-700">Leave anonymous reviews or create a profile to connect with other parents and students.
+              Get insights and tips from other users about schools and education.</p>
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Call to Action Section -->
+<section class="bg-gray-800 py-20">
+<div class="container mx-auto text-center">
+  <h2 class="text-4xl font-bold text-white mb-8">Ready to get started?</h2>
+  <a href="Register.html" class="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-700">Sign Up</a>
+</div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-10">
+<div class="container mx-auto flex justify-between items-center">
+  </div>
+  <div class="Foot">
+    &copy; HamroSchools. 2023 All rights reserved.</div>
+    <style>
+      .Foot {
+      text-align: center;
+    }
+    </style>
+    
+</div>
+</footer>
+</body>
+</html>
