@@ -1,0 +1,17 @@
+.star-rating {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .star {
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .star:hover,
+  .star.active {
+    color: #4800ff;
+  }
+  
