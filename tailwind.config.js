@@ -4,5 +4,6 @@ module.exports = {
     require('tw-elements/dist/plugin'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
+    require("daisyui"),
   ]
 }
