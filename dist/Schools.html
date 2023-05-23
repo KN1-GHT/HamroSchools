@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
+    <script type="module" src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4b1d5cc8eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./School.css" />
+    <script src="/Filter/Filter.js"></script>
+  </head>
+  <body>
+    <nav
+      class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-white mb-2"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto mt-3"
+      >
+        <a class="flex items-center">
+          <img
+            src="./HamroSchools (1).svg"
+            class="h-6 mr-3 sm:h-9"
+            alt="HamroSchools Logo"
+            style="margin-left: 75px"
+          />
+          <span
+            class="self-center text-3xl font-semibold whitespace-nowrap dark:text-black"
+            >HamroSchools</span
+          >
+        </a>
+        <div
+          class="items-center justify-between hidden md:flex md:w-auto md:order-1"
+          id="mobile-menu-2"
+          style="margin-right: 115px"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 border border-gray-100 -lg bg-gray-400 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="./Homepage.html"
+                class="block py-2 pl-3 pr-4 text-white bg-gray-700 md:bg-transparent md:p-0 dark:text-black md:hover:text-blue-700 md:p-0"
+                style="font-size: larger"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./Schools.html"
+                class="block py-2 pl-3 pr-4 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                style="font-size: larger"
+                >Schools</a
+              >
+            </li>
+            <li>
+              <a
+                href="./SchoolGuide.html"
+                class="block py-2 pl-3 pr-4 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                style="font-size: larger"
+                >School Guides</a
+              >
+            </li>
+            <li>
+              <a
+                href="./SchoolGuide.html"
+                class="block py-2 pl-3 pr-4 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                style="font-size: larger"
+                >College Guides</a
+              >
+            </li>
+            <li>
+              <a
+                href="./form.html"
+                class="block py-2 pl-3 pr-4 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                style="font-size: larger"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="product">
+      <div class="flex">
+        <div class="mt-7 mx-8 ml-8" id="filter" style="width: 200px">
+          <h2 class="font-medium">Boards / Curriulum</h2>
+          <ul id="main-titles">
+            <li><input type="radio" name="board" value="CBSE" />CBSE</li>
+            <li><input type="radio" name="board" value="CIE" />CIE</li>
+            <li><input type="radio" name="board" value="NCN" />NCN</li>
+            <li><input type="radio" name="board" value="Edexcel" />Edexcel</li>
+          </ul>
+          <br />
+          <h2 class="font-medium">Co-ed Status</h2>
+          <ul id="sub-titles">
+            <li>
+              <input type="radio" name="co" value="Co-ed" />Co-ed
+            </li>
+            <li><input type="radio" name="co" value="Boys" />Boys</li>
+            <li>
+              <input type="radio" name="co" value="Girls" />Girls
+            </li>
+          </ul>
+
+          <br />
+          <h2 class="font-medium">Location</h2>
+          <ul id="location">
+            <li><input type="radio" name="address" value="Kathmandu" />Kathmandu</li>
+            <li><input type="radio" name="address" value="Lalitpur" />Lalitpur</li>
+            <li><input type="radio" name="address" value="Patan" />Patan</li>
+            <li><input type="radio" name="address" value="Kritipur" />Kritipur</li>
+          </ul>
+          <br />
+          <h2 class="font-medium">School Level</h2>
+          <ul id="level">
+            <li><input type="radio" name="level" value="p" />Playgroup</li>
+            <li><input type="radio" name="level" value="ss" />Secondary School (IX-X)</li>
+            <li>
+              <input type="radio" name="level" value="sss" />Senior Secondary School (XI-XII)
+            </li>
+          </ul>
+          <button
+            id="applyButton"
+            onclick="applyFilter()"
+            class="mt-5 ml-2 inline-block rounded bg-blue-600 px-4 pb-1.5 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
+            Apply
+          </button>
+        </div>
+        <div id="products">
+
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyD5UJiSxJPI9yjVJ0bJHkCDw0Xf4e6hhBs",
+    authDomain: "hamroschools.firebaseapp.com",
+    databaseURL: "https://hamroschools-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "hamroschools",
+    storageBucket: "hamroschools.appspot.com",
+    messagingSenderId: "1040676673379",
+    appId: "1:1040676673379:web:4225317a7557ae6822a556"
+  };
+  
+  // Import the Firebase Hosting module
+  const firebaseHosting = require('firebase/hosting');
+  
+  // Initialize the Firebase Hosting configuration
+  const hostingConfig = {
+    site: 'hamroschools',
+    public: 'dist' // Set the "dist" directory as the public directory
+  };
+  
+  // Set up the Firebase Hosting site
+  firebaseHosting(hostingConfig, firebaseConfig)
+    .then(() => {
+      console.log(`Firebase Hosting site "${hostingConfig.site}" initialized successfully!`);
+    })
+    .catch((err) => {
+      console.error(`Error initializing Firebase Hosting site "${hostingConfig.site}":`, err);
+    });
+  

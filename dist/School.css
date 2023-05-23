@@ -1,0 +1,6 @@
+.product {
+    display: flex;
+    justify-content: center; /* Horizontally centers the div */
+    align-items: center; /* Vertically centers the div */
+  }
+  

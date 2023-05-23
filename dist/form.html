@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-white mb-2">
+        <div class="container flex flex-wrap items-center justify-between mx-auto mt-3">
+        <a class="flex items-center">
+            <img src="/dist/HamroSchools (1).svg" class="h-6 mr-3 sm:h-9" alt="HamroSchools Logo" style="margin-left: 75px;" />
+            <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-black">HamroSchools</span>
+        </a>
+        <div class="items-center justify-between hidden md:flex md:w-auto md:order-1" id="mobile-menu-2" style="margin-right:115px;">
+          <ul class="flex flex-col p-4 mt-4 border border-gray-100 -lg bg-gray-400 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+            <li>
+              <a href="./Homepage.html" class="block py-2 pl-3 pr-4 text-white bg-gray-700  md:bg-transparent  md:p-0 dark:text-black md:hover:text-blue-700 md:p-0" style="font-size: larger;" >Home</a>
+            </li>
+            <li>
+              <a href="./LACM.html" class="block py-2 pl-3 pr-4 text-black  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"  style="font-size: larger;">Schools</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-black  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" style="font-size: larger;">Colleges</a>
+            </li>
+            <li>
+              <a href="./SchoolGuide.html" class="block py-2 pl-3 pr-4 text-black  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"  style="font-size: larger;">School Guides</a>
+            </li>
+            <li>
+              <a href="./SchoolGuide.html" class="block py-2 pl-3 pr-4 text-black  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" style="font-size: larger;">College Guides</a>
+            </li>
+            <li>
+              <a href="./form.html" class="block py-2 pl-3 pr-4 text-black  hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0" style="font-size: larger;">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    <section class="text-gray-600 body-font relative">
+        <form action="https://formspree.io/f/mbjeelrz" method="POST">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">If you have any questions regarding our website. Feel free to ask.</p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-600">Full Name</label>
+                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="Message" class="leading-7 text-sm text-gray-600">Message</label>
+                  <textarea id="Message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" data-gramm="false" wt-ignore-input="true"></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </form>
+      </section>
+    
+</body>
+</html>

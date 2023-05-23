@@ -1,0 +1,37 @@
+#filter {
+    width: 100px;
+    float: left;
+  }
+  
+  h2 {
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  #products {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    background-color: #ccc;
+    overflow: auto;
+  }
+  
+  #products {
+    margin-left: 120px; /* Adjust this value to create the desired empty space */
+    background-color: gray;
+    height: 100vh;
+  }
+  
+  
